@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  audit:
+    runs-on: macos-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check README sync
+        # Non-blocking: the README Sync workflow auto-commits the generated
+        # list to main, so transient drift should warn, not fail the build.
+        continue-on-error: true
+        run: ruby scripts/update_readme.rb --check
+
+      - name: Validate cask syntax
+        run: |
+          for cask in Casks/*.rb; do
+            echo "Checking $cask"
+            ruby -c "$cask"
+          done
