@@ -2,8 +2,6 @@
 
 [![CI](https://github.com/the-protobuf-project/homebrew-tap/actions/workflows/ci.yml/badge.svg)](https://github.com/the-protobuf-project/homebrew-tap/actions/workflows/ci.yml)
 
-This repository is a personal Homebrew tap for distributing `finfo`.
-
 The list below is generated from `Casks/` and should be kept in sync by the bot.
 
 ## Install
