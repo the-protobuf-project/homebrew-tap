@@ -11,7 +11,7 @@ class Buffman < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/the-protobuf-project/buffman/releases/download/v0.1.0/buffman_0.1.0_darwin_amd64.tar.gz"
-      sha256 "ce5797f22f660373f1880046888f0a8f16aa5b1391943a710f2ac11c9b360f4f"
+      sha256 "8b58919cd801f5572f9309aa8474b4ba2219c0b51389007c4d2f813f78cc166d"
 
       define_method(:install) do
         bin.install "buffman"
@@ -19,7 +19,7 @@ class Buffman < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/the-protobuf-project/buffman/releases/download/v0.1.0/buffman_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9ac990ba8e9e33b47e52e7d0eb13b2140c0e1b1bba473f5911cfe411a8293a75"
+      sha256 "73a93782a5a9edc1fa534362eb8f062c25b529d5f82e7cef986b25bec63e593e"
 
       define_method(:install) do
         bin.install "buffman"
@@ -30,14 +30,14 @@ class Buffman < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/the-protobuf-project/buffman/releases/download/v0.1.0/buffman_0.1.0_linux_amd64.tar.gz"
-      sha256 "64e54e1f2a064e6662eded51a3cd17a59d2b424f50b08b44107da9746b99caa0"
+      sha256 "e42d7452f4bd9c28e6bf94ab78301658c47d979e79230d96364a52c33c4f6694"
       define_method(:install) do
         bin.install "buffman"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/the-protobuf-project/buffman/releases/download/v0.1.0/buffman_0.1.0_linux_arm64.tar.gz"
-      sha256 "ffd0d6e256ab74afa9a27e921b913f7d1aa3d09c9fd09923bc687d408f7ad063"
+      sha256 "7ea5ca7737188d95367edcdfcba5d466c884cb9bbf5a1a09092cfdcd1db5ec7b"
       define_method(:install) do
         bin.install "buffman"
       end
