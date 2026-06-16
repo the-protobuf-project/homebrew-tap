@@ -20,9 +20,10 @@ jobs:
         continue-on-error: true
         run: ruby scripts/update_readme.rb --check
 
-      - name: Validate cask syntax
+      - name: Validate formula and cask syntax
         run: |
-          for cask in Casks/*.rb; do
-            echo "Checking $cask"
-            ruby -c "$cask"
+          for file in Formula/*.rb Casks/*.rb; do
+            [ -e "$file" ] || continue
+            echo "Checking $file"
+            ruby -c "$file"
           done
