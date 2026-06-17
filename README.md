@@ -27,7 +27,7 @@ brew install --cask protoc-gen-protorm
 ## Available Casks
 
 <!-- BEGIN GENERATED CASK LIST -->
-- `protoc-gen-protorm` — Protoc plugin generating Prisma, GORM, SQL & CSV schemas from Protobuf + AIP annotations
+- `protoc-gen-protorm` — Protoc plugin generating Prisma, GORM & SQL schemas from Protobuf + AIP annotations
 <!-- END GENERATED CASK LIST -->
 
 ## Updating
