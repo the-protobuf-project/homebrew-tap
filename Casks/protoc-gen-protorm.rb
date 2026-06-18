@@ -4,12 +4,12 @@ cask "protoc-gen-protorm" do
 
   on_macos do
     on_intel do
-      sha256 "935e5ee1a098b2a608304df5e20faaf035a14acbf81b6257e8745f5bb5e14471"
+      sha256 "ba2f2d9f835390a2f74dc9b49812585f1d32f9cb18eb212b5d71757339da343c"
       url "https://github.com/the-protobuf-project/protorm/releases/download/v#{version}/protoc-gen-protorm_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/the-protobuf-project/protorm/"
     end
     on_arm do
-      sha256 "314e6df92063a1472aba8c50c0ab6aca7464de1082cd158e16b53e4296812189"
+      sha256 "1f18dfb44f035bd947b6309b32dcfda790e7fa3c6adc52396c987eac2467200f"
       url "https://github.com/the-protobuf-project/protorm/releases/download/v#{version}/protoc-gen-protorm_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/the-protobuf-project/protorm/"
     end
@@ -17,12 +17,12 @@ cask "protoc-gen-protorm" do
 
   on_linux do
     on_intel do
-      sha256 "eb2570e056fc8903b81596658e7bd3f419451264085b8d0287be881b825c8ec1"
+      sha256 "8d6b03006961117cef7da99e1a2753f76fe2feeeaa7c83478a185ee16a8d6d2e"
       url "https://github.com/the-protobuf-project/protorm/releases/download/v#{version}/protoc-gen-protorm_#{version}_linux_amd64.tar.gz",
         verified: "github.com/the-protobuf-project/protorm/"
     end
     on_arm do
-      sha256 "447c40a46c4268f301d6c0201a8ae028558c9d9764661e09968b88760213df27"
+      sha256 "a5cd00efa1352fde4da3bb649570b0b68a1aae3881dbdf49fcc5c8dbdbb64ec1"
       url "https://github.com/the-protobuf-project/protorm/releases/download/v#{version}/protoc-gen-protorm_#{version}_linux_arm64.tar.gz",
         verified: "github.com/the-protobuf-project/protorm/"
     end
