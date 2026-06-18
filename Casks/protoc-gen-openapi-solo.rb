@@ -32,7 +32,7 @@ cask "protoc-gen-openapi-solo" do
     skip "Auto-generated on release."
   end
 
-  binary "protoc-gen-openapi"
+  binary "protoc-gen-openapi", target: "protoc-gen-openapi-solo"
 
   postflight do
     if OS.mac?
