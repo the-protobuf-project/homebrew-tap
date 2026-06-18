@@ -4,22 +4,22 @@ cask "protoc-gen-openapi-solo" do
 
   on_macos do
     on_intel do
-      sha256 "0d56ca1e8fbe296f395fc5e38b6b5ecb2ec34c94046847bf076fd0fff62c7e2f"
+      sha256 "b89fc4bf948c74828355d187d388afd94036a35cef9838c4695fce5e0cf81d18"
       url "https://github.com/the-protobuf-project/protoc-gen-openapi-solo/releases/download/v#{version}/protoc-gen-openapi_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "f91c2c14e5b12fc95353d32649a93e557f6371abc8f70383cf49c93d9180a6b1"
+      sha256 "155567205961f14afc060ca3fd2a58a7d982e7b4650985cd1065b780f1148ac5"
       url "https://github.com/the-protobuf-project/protoc-gen-openapi-solo/releases/download/v#{version}/protoc-gen-openapi_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "539001004850b929391ff2a38ab1c9571f7f1d3e67a77aa240eff34e80a01619"
+      sha256 "c3d9ed9b3e095038f31ab1f3303d7a263a53949ecf3e3059c93d3eebe3d91e8c"
       url "https://github.com/the-protobuf-project/protoc-gen-openapi-solo/releases/download/v#{version}/protoc-gen-openapi_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "01861fe0cd8d3a4997bdd4cc691b1a9e26b22502d544f4ada8440b7ec92c073b"
+      sha256 "80b79429e277e59f2dce2f18ebce605e3360232062e514524ded61ef749bc7ee"
       url "https://github.com/the-protobuf-project/protoc-gen-openapi-solo/releases/download/v#{version}/protoc-gen-openapi_#{version}_linux_arm64.tar.gz"
     end
   end
@@ -32,11 +32,11 @@ cask "protoc-gen-openapi-solo" do
     skip "Auto-generated on release."
   end
 
-  binary "protoc-gen-openapi", target: "protoc-gen-openapi-solo"
+  binary "protoc-gen-openapi-solo"
 
   postflight do
     if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/protoc-gen-openapi"]
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/protoc-gen-openapi-solo"]
     end
   end
 
