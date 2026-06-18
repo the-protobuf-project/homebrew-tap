@@ -27,6 +27,7 @@ brew install --cask protoc-gen-protorm
 ## Available Casks
 
 <!-- BEGIN GENERATED CASK LIST -->
+- `gnostic` — Tool for building better REST APIs through knowledge; converts OpenAPI to/from Protocol Buffers and generates OpenAPI/JSON Schema from .proto files
 - `protoc-gen-protorm` — Protoc plugin generating Prisma, GORM & SQL schemas from Protobuf + AIP annotations
 <!-- END GENERATED CASK LIST -->
 
