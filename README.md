@@ -22,6 +22,7 @@ brew install --cask protoc-gen-protorm
 
 <!-- BEGIN GENERATED FORMULA LIST -->
 - `buffman` — CLI tool that wraps flatc to convert .proto files to .fbs and generate multi-language code from a declarative YAML config
+- `protoc-gen-go-gapic` — GAPIC protoc plugin for Go (protoc-gen-go_gapic), redistributed from googleapis/gapic-generator-go
 - `protoc-gen-python-gapic` — GAPIC protoc plugin for Python (protoc-gen-python_gapic)
 - `protoc-gen-typescript-gapic` — GAPIC protoc plugin for TypeScript/Node (protoc-gen-typescript_gapic)
 <!-- END GENERATED FORMULA LIST -->
