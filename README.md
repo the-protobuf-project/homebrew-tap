@@ -4,36 +4,38 @@
 
 Homebrew formulae and casks for [the-protobuf-project](https://github.com/the-protobuf-project) — tooling for building with Protobuf.
 
-The lists below are generated from `Formula/` and `Casks/` and are kept in sync by the README Sync workflow.
+The sections below are generated from `Formula/` and `Casks/` and are kept in sync by the README Sync workflow.
 
 ## Install
 
-```bash
-brew tap the-protobuf-project/tap
-
-# Formulae
-brew install buffman
-
-# Casks
-brew install --cask protoc-gen-protorm
-```
+Each package below ships a ready-to-run command — just copy, paste, and run.
+The names are fully qualified (`the-protobuf-project/tap/<name>`), so no separate
+`brew tap` step is needed.
 
 ## Available Formulae
 
 <!-- BEGIN GENERATED FORMULA LIST -->
-- `buffman` — CLI tool that wraps flatc to convert .proto files to .fbs and generate multi-language code from a declarative YAML config
-- `protoc-gen-go-gapic` — GAPIC protoc plugin for Go (protoc-gen-go_gapic), redistributed from googleapis/gapic-generator-go
-- `protoc-gen-python-gapic` — GAPIC protoc plugin for Python (protoc-gen-python_gapic)
-- `protoc-gen-typescript-gapic` — GAPIC protoc plugin for TypeScript/Node (protoc-gen-typescript_gapic)
+
+| Formula | Description | Install |
+| --- | --- | --- |
+| `buffman` | CLI tool that wraps flatc to convert .proto files to .fbs and generate multi-language code from a declarative YAML config | `brew install the-protobuf-project/tap/buffman` |
+| `protoc-gen-go-gapic` | GAPIC protoc plugin for Go (protoc-gen-go_gapic), redistributed from googleapis/gapic-generator-go | `brew install the-protobuf-project/tap/protoc-gen-go-gapic` |
+| `protoc-gen-python-gapic` | GAPIC protoc plugin for Python (protoc-gen-python_gapic) | `brew install the-protobuf-project/tap/protoc-gen-python-gapic` |
+| `protoc-gen-typescript-gapic` | GAPIC protoc plugin for TypeScript/Node (protoc-gen-typescript_gapic) | `brew install the-protobuf-project/tap/protoc-gen-typescript-gapic` |
+
 <!-- END GENERATED FORMULA LIST -->
 
 ## Available Casks
 
 <!-- BEGIN GENERATED CASK LIST -->
-- `gnostic` — Tool for building better REST APIs through knowledge; converts OpenAPI to/from Protocol Buffers and generates OpenAPI/JSON Schema from .proto files
-- `protoc-gen-mcp` — Protoc plugin generating MCP server code (Go, Python, Rust, C++) from Protobuf + gRPC definitions
-- `protoc-gen-openapi-solo` — protoc plugin that generates OpenAPI v3 specs from protobuf definitions
-- `protoc-gen-protorm` — Protoc plugin generating Prisma, GORM & SQL schemas from Protobuf + AIP annotations
+
+| Cask | Description | Install |
+| --- | --- | --- |
+| `gnostic` | Tool for building better REST APIs through knowledge; converts OpenAPI to/from Protocol Buffers and generates OpenAPI/JSON Schema from .proto files | `brew install --cask the-protobuf-project/tap/gnostic` |
+| `protoc-gen-mcp` | Protoc plugin generating MCP server code (Go, Python, Rust, C++) from Protobuf + gRPC definitions | `brew install --cask the-protobuf-project/tap/protoc-gen-mcp` |
+| `protoc-gen-openapi-solo` | protoc plugin that generates OpenAPI v3 specs from protobuf definitions | `brew install --cask the-protobuf-project/tap/protoc-gen-openapi-solo` |
+| `protoc-gen-protorm` | Protoc plugin generating Prisma, GORM & SQL schemas from Protobuf + AIP annotations | `brew install --cask the-protobuf-project/tap/protoc-gen-protorm` |
+
 <!-- END GENERATED CASK LIST -->
 
 ## Updating
