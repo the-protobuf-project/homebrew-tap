@@ -34,6 +34,7 @@ The names are fully qualified (`the-protobuf-project/tap/<name>`), so no separat
 | `gnostic` | Tool for building better REST APIs through knowledge; converts OpenAPI to/from Protocol Buffers and generates OpenAPI/JSON Schema from .proto files | `brew install --cask the-protobuf-project/tap/gnostic` |
 | `protoc-gen-mcp` | Protoc plugin generating MCP server code (Go, Python, Rust, C++) from Protobuf + gRPC definitions | `brew install --cask the-protobuf-project/tap/protoc-gen-mcp` |
 | `protoc-gen-openapi-solo` | protoc plugin that generates OpenAPI v3 specs from protobuf definitions | `brew install --cask the-protobuf-project/tap/protoc-gen-openapi-solo` |
+| `protoc-gen-orm` | Protoc plugin generating Prisma, GORM & SQL schemas from Protobuf + AIP annotations | `brew install --cask the-protobuf-project/tap/protoc-gen-orm` |
 | `protoc-gen-protorm` | Protoc plugin generating Prisma, GORM & SQL schemas from Protobuf + AIP annotations | `brew install --cask the-protobuf-project/tap/protoc-gen-protorm` |
 
 <!-- END GENERATED CASK LIST -->
