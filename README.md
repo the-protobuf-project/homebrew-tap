@@ -36,6 +36,7 @@ The names are fully qualified (`the-protobuf-project/tap/<name>`), so no separat
 | `protoc-gen-openapi-solo` | protoc plugin that generates OpenAPI v3 specs from protobuf definitions | `brew install --cask the-protobuf-project/tap/protoc-gen-openapi-solo` |
 | `protoc-gen-orm` | Protoc plugin generating Prisma, GORM & SQL schemas from Protobuf + AIP annotations | `brew install --cask the-protobuf-project/tap/protoc-gen-orm` |
 | `protoc-gen-protorm` | Protoc plugin generating Prisma, GORM & SQL schemas from Protobuf + AIP annotations | `brew install --cask the-protobuf-project/tap/protoc-gen-protorm` |
+| `protoc-gen-store` | Protoc plugin generating Prisma, GORM & SQL schemas from Protobuf + AIP annotations | `brew install --cask the-protobuf-project/tap/protoc-gen-store` |
 
 <!-- END GENERATED CASK LIST -->
 
