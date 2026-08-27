@@ -31,6 +31,7 @@ The names are fully qualified (`the-protobuf-project/tap/<name>`), so no separat
 
 | Cask | Description | Install |
 | --- | --- | --- |
+| `buffers` | Generate FlatBuffers, Cap n Proto, ROS and Wire schema from AIP-annotated protobuf | `brew install --cask the-protobuf-project/tap/buffers` |
 | `gnostic` | Tool for building better REST APIs through knowledge; converts OpenAPI to/from Protocol Buffers and generates OpenAPI/JSON Schema from .proto files | `brew install --cask the-protobuf-project/tap/gnostic` |
 | `protoc-gen-mcp` | Protoc plugin generating MCP server code (Go, Rust, C++) from Protobuf + gRPC definitions | `brew install --cask the-protobuf-project/tap/protoc-gen-mcp` |
 | `protoc-gen-openapi-solo` | protoc plugin that generates OpenAPI v3 specs from protobuf definitions | `brew install --cask the-protobuf-project/tap/protoc-gen-openapi-solo` |
