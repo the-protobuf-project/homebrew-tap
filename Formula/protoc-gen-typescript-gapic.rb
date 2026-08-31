@@ -1,10 +1,10 @@
 class ProtocGenTypescriptGapic < Formula
   desc "GAPIC protoc plugin for TypeScript/Node (protoc-gen-typescript_gapic)"
   homepage "https://github.com/the-protobuf-project/gapic"
-  url "https://github.com/the-protobuf-project/gapic/releases/download/ts-v5.0.1/protoc-gen-typescript_gapic_5.0.1.tar.gz"
-  sha256 "0f0f5fa0e303bdd21a717ff62c4395aa3de78e8806302711341f7fcc1b6012a8"
+  url "https://github.com/the-protobuf-project/gapic/releases/download/ts-v5.1.0/protoc-gen-typescript_gapic_5.1.0.tar.gz"
+  sha256 "a3ceb4b0794b7b2710acc2037cbc84e99ea6240c8f1bb4a163154ae4ab097671"
   license "Apache-2.0"
-  version "5.0.1"
+  version "5.1.0"
 
   depends_on "node"
 
