@@ -5,21 +5,21 @@
 class ProtocGenGoGapic < Formula
   desc "GAPIC protoc plugin for Go (protoc-gen-go_gapic), redistributed from googleapis/gapic-generator-go"
   homepage "https://github.com/the-protobuf-project/gapic"
-  version "0.64.0"
+  version "0.65.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/the-protobuf-project/gapic/releases/download/go-v0.64.0/protoc-gen-go_gapic_0.64.0_darwin_amd64.tar.gz"
-      sha256 "101acfa4dc466e0b02229da1fbda4cbca737111463c4af8f477ad255ec1388b7"
+      url "https://github.com/the-protobuf-project/gapic/releases/download/go-v0.65.0/protoc-gen-go_gapic_0.65.0_darwin_amd64.tar.gz"
+      sha256 "22a7deaeeadcd141ac60e6919e26aa75129132c446b16f2c82d36dbd0afb1be4"
 
       define_method(:install) do
         bin.install "protoc-gen-go_gapic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/the-protobuf-project/gapic/releases/download/go-v0.64.0/protoc-gen-go_gapic_0.64.0_darwin_arm64.tar.gz"
-      sha256 "7bc012b8dc3b13a7161724b0f095556e148f2d591c4776d70761c4848f4ed300"
+      url "https://github.com/the-protobuf-project/gapic/releases/download/go-v0.65.0/protoc-gen-go_gapic_0.65.0_darwin_arm64.tar.gz"
+      sha256 "95ef3221cc8031546ebd292e75f66ca8bdeecd3ec5c08c2dc6bc5d867d274124"
 
       define_method(:install) do
         bin.install "protoc-gen-go_gapic"
@@ -29,15 +29,15 @@ class ProtocGenGoGapic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/the-protobuf-project/gapic/releases/download/go-v0.64.0/protoc-gen-go_gapic_0.64.0_linux_amd64.tar.gz"
-      sha256 "6d40e8b85f1a22a4cee9cbee5c3554b701671664d5b5da602dce709a27c7919f"
+      url "https://github.com/the-protobuf-project/gapic/releases/download/go-v0.65.0/protoc-gen-go_gapic_0.65.0_linux_amd64.tar.gz"
+      sha256 "e5572fcce9f388ad5178d96db742a2ca58b4568f082ee6c5df13c47e9da5c528"
       define_method(:install) do
         bin.install "protoc-gen-go_gapic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/the-protobuf-project/gapic/releases/download/go-v0.64.0/protoc-gen-go_gapic_0.64.0_linux_arm64.tar.gz"
-      sha256 "fe9700a536afa9d8cf35d0341634b008b1a6b1b17064e4838c2f175471831e75"
+      url "https://github.com/the-protobuf-project/gapic/releases/download/go-v0.65.0/protoc-gen-go_gapic_0.65.0_linux_arm64.tar.gz"
+      sha256 "61995711280b0d480290bc1949403eaf9f751b47c2acc1944734d9d710cc8632"
       define_method(:install) do
         bin.install "protoc-gen-go_gapic"
       end
