@@ -3,10 +3,10 @@ class ProtocGenPythonGapic < Formula
 
   desc "GAPIC protoc plugin for Python (protoc-gen-python_gapic)"
   homepage "https://github.com/the-protobuf-project/gapic"
-  url "https://github.com/the-protobuf-project/gapic/releases/download/py-v1.43.0/gapic_generator-1.43.0.tar.gz"
-  sha256 "666e6cf5e783bfefa38fa7ed78be926ee5dc35387c561adee765bf41d1fd1ece"
+  url "https://github.com/the-protobuf-project/gapic/releases/download/py-v1.43.1/gapic_generator-1.43.1.tar.gz"
+  sha256 "fc08b1f87885077a2a021ed6b3bf8d028092e21fe0e8b34c75f38882c6075e8c"
   license "Apache-2.0"
-  version "1.43.0"
+  version "1.43.1"
 
   depends_on "python@3.12"
 
