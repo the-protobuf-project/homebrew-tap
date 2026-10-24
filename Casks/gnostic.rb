@@ -36,11 +36,11 @@ cask "gnostic" do
   binary "protoc-gen-openapi"
   binary "protoc-gen-jsonschema"
 
-  postflight do
-    if OS.mac?
-      ["gnostic", "protoc-gen-openapi", "protoc-gen-jsonschema"].each do |b|
-        system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/#{b}"]
-      end
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "gnostic"], chdir: "."
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "protoc-gen-openapi"], chdir: "."
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "protoc-gen-jsonschema"], chdir: "."
     end
   end
 

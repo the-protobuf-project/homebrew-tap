@@ -34,10 +34,10 @@ cask "buffers" do
   binary "protoc-gen-buffers"
   binary "buffers"
 
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/protoc-gen-buffers"]
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/buffers"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "protoc-gen-buffers"], chdir: "."
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "buffers"], chdir: "."
     end
   end
 

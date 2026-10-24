@@ -10,7 +10,7 @@ class ProtocGenGoGapic < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/the-protobuf-project/gapic/releases/download/go-v0.65.0/protoc-gen-go_gapic_0.65.0_darwin_amd64.tar.gz"
+      url "https://github.com/the-protobuf-project/gapic/releases/download/v0.65.0/protoc-gen-go_gapic_0.65.0_darwin_amd64.tar.gz"
       sha256 "22a7deaeeadcd141ac60e6919e26aa75129132c446b16f2c82d36dbd0afb1be4"
 
       define_method(:install) do
@@ -18,7 +18,7 @@ class ProtocGenGoGapic < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/the-protobuf-project/gapic/releases/download/go-v0.65.0/protoc-gen-go_gapic_0.65.0_darwin_arm64.tar.gz"
+      url "https://github.com/the-protobuf-project/gapic/releases/download/v0.65.0/protoc-gen-go_gapic_0.65.0_darwin_arm64.tar.gz"
       sha256 "95ef3221cc8031546ebd292e75f66ca8bdeecd3ec5c08c2dc6bc5d867d274124"
 
       define_method(:install) do
@@ -29,14 +29,14 @@ class ProtocGenGoGapic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/the-protobuf-project/gapic/releases/download/go-v0.65.0/protoc-gen-go_gapic_0.65.0_linux_amd64.tar.gz"
+      url "https://github.com/the-protobuf-project/gapic/releases/download/v0.65.0/protoc-gen-go_gapic_0.65.0_linux_amd64.tar.gz"
       sha256 "e5572fcce9f388ad5178d96db742a2ca58b4568f082ee6c5df13c47e9da5c528"
       define_method(:install) do
         bin.install "protoc-gen-go_gapic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/the-protobuf-project/gapic/releases/download/go-v0.65.0/protoc-gen-go_gapic_0.65.0_linux_arm64.tar.gz"
+      url "https://github.com/the-protobuf-project/gapic/releases/download/v0.65.0/protoc-gen-go_gapic_0.65.0_linux_arm64.tar.gz"
       sha256 "61995711280b0d480290bc1949403eaf9f751b47c2acc1944734d9d710cc8632"
       define_method(:install) do
         bin.install "protoc-gen-go_gapic"

@@ -34,9 +34,9 @@ cask "protoc-gen-openapi-solo" do
 
   binary "protoc-gen-openapi-solo"
 
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/protoc-gen-openapi-solo"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "protoc-gen-openapi-solo"], chdir: "."
     end
   end
 

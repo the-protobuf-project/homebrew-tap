@@ -18,7 +18,6 @@ The names are fully qualified (`the-protobuf-project/tap/<name>`), so no separat
 
 | Formula | Description | Install |
 | --- | --- | --- |
-| `buffman` | CLI tool that wraps flatc to convert .proto files to .fbs and generate multi-language code from a declarative YAML config | `brew install the-protobuf-project/tap/buffman` |
 | `protoc-gen-go-gapic` | GAPIC protoc plugin for Go (protoc-gen-go_gapic), redistributed from googleapis/gapic-generator-go | `brew install the-protobuf-project/tap/protoc-gen-go-gapic` |
 | `protoc-gen-python-gapic` | GAPIC protoc plugin for Python (protoc-gen-python_gapic) | `brew install the-protobuf-project/tap/protoc-gen-python-gapic` |
 | `protoc-gen-typescript-gapic` | GAPIC protoc plugin for TypeScript/Node (protoc-gen-typescript_gapic) | `brew install the-protobuf-project/tap/protoc-gen-typescript-gapic` |

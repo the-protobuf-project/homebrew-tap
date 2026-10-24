@@ -5,26 +5,22 @@ cask "protoc-gen-orm" do
   on_macos do
     on_intel do
       sha256 "370f6ae4ce66103ba53bba2ab68737d4a4ccc26f4b00fcb2f7b189ac44ecd6d4"
-      url "https://github.com/the-protobuf-project/orm/releases/download/v#{version}/protoc-gen-orm_#{version}_darwin_amd64.tar.gz",
-        verified: "github.com/the-protobuf-project/orm/"
+      url "https://github.com/the-protobuf-project/orm/releases/download/v#{version}/protoc-gen-orm_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
       sha256 "83cb9aa190f2fb514f7686f6ea43efc9c73b059c1fb83b652460a75d30122650"
-      url "https://github.com/the-protobuf-project/orm/releases/download/v#{version}/protoc-gen-orm_#{version}_darwin_arm64.tar.gz",
-        verified: "github.com/the-protobuf-project/orm/"
+      url "https://github.com/the-protobuf-project/orm/releases/download/v#{version}/protoc-gen-orm_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
       sha256 "b6be6d2087ec1fb9ef782e069d9d991046b53cbc1d96740f4208d2b00066ef84"
-      url "https://github.com/the-protobuf-project/orm/releases/download/v#{version}/protoc-gen-orm_#{version}_linux_amd64.tar.gz",
-        verified: "github.com/the-protobuf-project/orm/"
+      url "https://github.com/the-protobuf-project/orm/releases/download/v#{version}/protoc-gen-orm_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
       sha256 "c8c34fd9164b0b113b7cfc2f9e017fedd440ceb70ef3f07f2004d3e3295bd25f"
-      url "https://github.com/the-protobuf-project/orm/releases/download/v#{version}/protoc-gen-orm_#{version}_linux_arm64.tar.gz",
-        verified: "github.com/the-protobuf-project/orm/"
+      url "https://github.com/the-protobuf-project/orm/releases/download/v#{version}/protoc-gen-orm_#{version}_linux_arm64.tar.gz"
     end
   end
 
@@ -38,9 +34,9 @@ cask "protoc-gen-orm" do
 
   binary "protoc-gen-orm"
 
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/protoc-gen-orm"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "protoc-gen-orm"], chdir: "."
     end
   end
 

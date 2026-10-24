@@ -5,26 +5,22 @@ cask "protoc-gen-protorm" do
   on_macos do
     on_intel do
       sha256 "d2c67c476f836293cb1a81257c60d66ec00ad0650937976d19e5ba496d0ff89a"
-      url "https://github.com/the-protobuf-project/protorm/releases/download/v#{version}/protoc-gen-protorm_#{version}_darwin_amd64.tar.gz",
-        verified: "github.com/the-protobuf-project/protorm/"
+      url "https://github.com/the-protobuf-project/protorm/releases/download/v#{version}/protoc-gen-protorm_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
       sha256 "a2a737ed9c8699c6b2cfe22ac64e9177623aea46410e27f53318afffa717ab87"
-      url "https://github.com/the-protobuf-project/protorm/releases/download/v#{version}/protoc-gen-protorm_#{version}_darwin_arm64.tar.gz",
-        verified: "github.com/the-protobuf-project/protorm/"
+      url "https://github.com/the-protobuf-project/protorm/releases/download/v#{version}/protoc-gen-protorm_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
       sha256 "1bf6be9c6a7d52fedfd78baaacf860b8c96632d76621edc75f1fa0ad04f4ff06"
-      url "https://github.com/the-protobuf-project/protorm/releases/download/v#{version}/protoc-gen-protorm_#{version}_linux_amd64.tar.gz",
-        verified: "github.com/the-protobuf-project/protorm/"
+      url "https://github.com/the-protobuf-project/protorm/releases/download/v#{version}/protoc-gen-protorm_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
       sha256 "c0c071d67cad3dae1e5b1042b006b057c3f40b496176bcee300247403f87584f"
-      url "https://github.com/the-protobuf-project/protorm/releases/download/v#{version}/protoc-gen-protorm_#{version}_linux_arm64.tar.gz",
-        verified: "github.com/the-protobuf-project/protorm/"
+      url "https://github.com/the-protobuf-project/protorm/releases/download/v#{version}/protoc-gen-protorm_#{version}_linux_arm64.tar.gz"
     end
   end
 
@@ -38,9 +34,9 @@ cask "protoc-gen-protorm" do
 
   binary "protoc-gen-protorm"
 
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/protoc-gen-protorm"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "protoc-gen-protorm"], chdir: "."
     end
   end
 
