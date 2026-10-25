@@ -6,25 +6,25 @@ cask "protoc-gen-openapi-solo" do
     end
   end
 
-  version "1.1.0"
+  version "1.2.0"
 
   on_macos do
     on_arm do
-      sha256 "044f4ee86591c8ce5e7805a3f07ebe38577d38107bb664004d15a73a32c24d10"
+      sha256 "10001124e248a8ed7ee18f8382fc88031c2359655b35345c04e7a8a0f28025b2"
       url "https://github.com/the-protobuf-project/protoc-gen-openapi-solo/releases/download/v#{version}/protoc-gen-openapi_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "80ac7718bcb22b3dee2cf96dca7219309abb303cb1d3e60fea92e43dcbaeaf8a"
+      sha256 "eb9ca4fd11909a03e90c95a7d3b75c2d62a6c89b4b0c3f9ab1c00498e589a24b"
       url "https://github.com/the-protobuf-project/protoc-gen-openapi-solo/releases/download/v#{version}/protoc-gen-openapi_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "2638aeb60d8950065a732981e03ecee2f903f5ac4504e56eae45415210833fea"
+      sha256 "d0fce875a93789d9a1a4456fceefb105626d2e86d3522767d6834dea9afb96ad"
       url "https://github.com/the-protobuf-project/protoc-gen-openapi-solo/releases/download/v#{version}/protoc-gen-openapi_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "8d216d0d7a5a204c9dc4642dd83762a19caa86305748ba1fe907d709875578fc"
+      sha256 "6de8bf1f6ed2dbc8393036b4dc0f4cceb33f4b643fcbe79ec3e33bd4089845c8"
       url "https://github.com/the-protobuf-project/protoc-gen-openapi-solo/releases/download/v#{version}/protoc-gen-openapi_#{version}_linux_amd64.tar.gz"
     end
   end
