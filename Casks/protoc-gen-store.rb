@@ -6,25 +6,25 @@ cask "protoc-gen-store" do
     end
   end
 
-  version "1.6.7"
+  version "1.6.8"
 
   on_macos do
     on_arm do
-      sha256 "ec5acd891901eb9a462a05ac28e32c2a9a6260fc53bded75658fefe48f7dbf8a"
+      sha256 "d8c708eae9d5551207c8c4ca76156d48f6ec066af6a1bd454030dbd97ab2f3e5"
       url "https://github.com/the-protobuf-project/store/releases/download/v#{version}/protoc-gen-store_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "1519eb8c1a7d3a5e9925fd2c38cea12b322d963a58b0a1898338c48c261a5041"
+      sha256 "4e89175470282c0ae14b8a971b6fda6fd6b160e341373b8317bb57cab4c2543c"
       url "https://github.com/the-protobuf-project/store/releases/download/v#{version}/protoc-gen-store_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "31e7746f1ce50f44f0acd85dc3a0d287a5975a8d378725a5f017ce9e68225cd9"
+      sha256 "1e2f262de7eac656840b6366e38d7ea30fee3e3891fff60dc67825e94b9555de"
       url "https://github.com/the-protobuf-project/store/releases/download/v#{version}/protoc-gen-store_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "a65681883d8e56059e25a0699d045611c9195d3c10d635359f68fbcf726cda22"
+      sha256 "2010c7ec89980d8b21b8cc6cf05219c870177af4800ff9e148a88e8e60a84181"
       url "https://github.com/the-protobuf-project/store/releases/download/v#{version}/protoc-gen-store_#{version}_linux_amd64.tar.gz"
     end
   end
