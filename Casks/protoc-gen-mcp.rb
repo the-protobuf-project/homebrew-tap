@@ -6,25 +6,25 @@ cask "protoc-gen-mcp" do
     end
   end
 
-  version "1.7.8"
+  version "1.7.9"
 
   on_macos do
     on_arm do
-      sha256 "779e6b671add1a4fa4849936a7e04044243023064f2f5cd513d2f1f11f30c370"
+      sha256 "c5f1a2da5d203f683e79f39a9cf82f0ec61c8b03ce915d8a18d30cb7e318b555"
       url "https://github.com/the-protobuf-project/mcp/releases/download/v#{version}/protoc-gen-mcp_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "5d6c3dd97c84d53c8f3078677e00b6830a65b609bbede676266b1bd3f963ea0a"
+      sha256 "388aa5e16d486fd1d37615ba6f1c727af1137aaf947cf0b91867d71f09f772d3"
       url "https://github.com/the-protobuf-project/mcp/releases/download/v#{version}/protoc-gen-mcp_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "a96f613e7df8d0aa6856face370e35580b5e61bc52767c3f1e16ca128c7b0f46"
+      sha256 "2d52341fe04ce86f9c3d6f8dd7a13941c3b25be6c554206be4d41f4ce83a4bb9"
       url "https://github.com/the-protobuf-project/mcp/releases/download/v#{version}/protoc-gen-mcp_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "0a5474a2b2164e054a2d48c8280e3f9a8513c4fc7f8c916fcd4d06c5edcc55e9"
+      sha256 "aa2726a148612c6825d6be01d7e29cfddbc5bfc5e6cde113bce1344dc3f8df50"
       url "https://github.com/the-protobuf-project/mcp/releases/download/v#{version}/protoc-gen-mcp_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -39,5 +39,5 @@ cask "protoc-gen-mcp" do
 
   binary "protoc-gen-mcp"
 
-  # No zap stanza required
+  zap :not_required
 end
