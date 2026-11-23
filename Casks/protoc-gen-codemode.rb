@@ -6,25 +6,25 @@ cask "protoc-gen-codemode" do
     end
   end
 
-  version "0.2.1"
+  version "0.3.0"
 
   on_macos do
     on_arm do
-      sha256 "b2516ecb14c2730a1535ea1620b61c61fd02185bb787cf3ff0de387fe69b3319"
+      sha256 "0af372062395a21ba0a54fdd2c8ae4e3340d7ca36a9f7d1c6617d861c009ec1d"
       url "https://github.com/the-protobuf-project/codemode/releases/download/v#{version}/protoc-gen-codemode_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "ef155206a36fde7ed7922907786753f3d23cdab989266e9260a9d8e29ad1af7b"
+      sha256 "a1aa06b8032a2283267ca25681645711af7ce9de304f1de01ba980d2a9733490"
       url "https://github.com/the-protobuf-project/codemode/releases/download/v#{version}/protoc-gen-codemode_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "54e924af7c8411ac7f4a01291451f97e80433286ed0d42089994edd422f47edb"
+      sha256 "d294b7ce6dd7c156ddf53ee22567412e139f4ee4ff7be862635351be84a37c3f"
       url "https://github.com/the-protobuf-project/codemode/releases/download/v#{version}/protoc-gen-codemode_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "2d5f09ee19c9ea69e1f6a64193d51f034c263766135dba2d0256665898b4849a"
+      sha256 "068e4c44e5518b3f145a605813159300618acacb63b2fa0dbca49467514a0ed2"
       url "https://github.com/the-protobuf-project/codemode/releases/download/v#{version}/protoc-gen-codemode_#{version}_linux_amd64.tar.gz"
     end
   end
